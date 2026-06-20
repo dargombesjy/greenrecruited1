@@ -1,7 +1,7 @@
 import { error, fail, fil, redirect } from "@sveltejs/kit";
 import { PUBLIC_STRAPI_URL } from "$env/static/public";
 
-export default async function actions({ request, cookies }) {
+export async function actions({ request, cookies }) {
   const data = await request.formData();
   const identifier = data.get("email");
   const password = data.get("password");
