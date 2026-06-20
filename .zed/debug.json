@@ -1,0 +1,26 @@
+// Project-local debug tasks
+//
+// For more documentation on how to configure debug tasks,
+// see: https://zed.dev/docs/debugger
+[
+  {
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug SvelteKit Server",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "sourceMaps": true,
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome against Svelte Localhost",
+        "url": "http://localhost:5173",
+        "webRoot": "${workspaceFolder}",
+        "sourceMaps": true,
+      },
+    ],
+  },
+]
