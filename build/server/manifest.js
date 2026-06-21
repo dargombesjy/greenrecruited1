@@ -7,19 +7,19 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["robots.txt"]),
-	mimeTypes: {".txt":"text/plain"},
+	assets: new Set(["images/logo.jpg","images/logo.svg","robots.txt"]),
+	mimeTypes: {".jpg":"image/jpeg",".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.BA1doDHK.js",app:"_app/immutable/entry/app.BDkZHAcx.js",imports:["_app/immutable/entry/start.BA1doDHK.js","_app/immutable/chunks/oXK2wOQ4.js","_app/immutable/chunks/Xf70Baoe.js","_app/immutable/entry/app.BDkZHAcx.js","_app/immutable/chunks/Xf70Baoe.js","_app/immutable/chunks/kNaey6uv.js","_app/immutable/chunks/xihTtKlq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BdNBXdPI.js",app:"_app/immutable/entry/app.BNholRIV.js",imports:["_app/immutable/entry/start.BdNBXdPI.js","_app/immutable/chunks/_S9ngg5a.js","_app/immutable/chunks/Xf70Baoe.js","_app/immutable/entry/app.BNholRIV.js","_app/immutable/chunks/Xf70Baoe.js","_app/immutable/chunks/kNaey6uv.js","_app/immutable/chunks/xihTtKlq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
-			__memo(() => import('./chunks/0-CnAotoLw.js')),
-			__memo(() => import('./chunks/1-CG_iGYwi.js')),
+			__memo(() => import('./chunks/0-clpo0xY3.js')),
+			__memo(() => import('./chunks/1-Hxui5_Qj.js')),
 			__memo(() => import('./chunks/2-39QDhjO9.js')),
 			__memo(() => import('./chunks/3-BWY-4Azd.js')),
-			__memo(() => import('./chunks/4-D4esfEiX.js')),
-			__memo(() => import('./chunks/5-BzeW4wPz.js')),
-			__memo(() => import('./chunks/6-DyS5ZvHA.js')),
-			__memo(() => import('./chunks/7-WYmDBPai.js')),
+			__memo(() => import('./chunks/4-DxVvIQDF.js')),
+			__memo(() => import('./chunks/5-C2CYy4ep.js')),
+			__memo(() => import('./chunks/6-6AICvpij.js')),
+			__memo(() => import('./chunks/7-B0UkVePw.js')),
 			__memo(() => import('./chunks/8-CnT9Zvdf.js')),
 			__memo(() => import('./chunks/9-DBmK45z-.js')),
 			__memo(() => import('./chunks/10-CE9aS7jm.js')),
@@ -32,8 +32,8 @@ return {
 			__memo(() => import('./chunks/17-B6D8ygtz.js')),
 			__memo(() => import('./chunks/18-DdR8lIQs.js')),
 			__memo(() => import('./chunks/19-CN2Z5c3R.js')),
-			__memo(() => import('./chunks/20-BU6LRixu.js')),
-			__memo(() => import('./chunks/21-CGxADBOB.js'))
+			__memo(() => import('./chunks/20-CFocWtQB.js')),
+			__memo(() => import('./chunks/21-vznFtKqC.js'))
 		],
 		remotes: {
 			

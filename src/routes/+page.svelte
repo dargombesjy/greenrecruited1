@@ -29,7 +29,7 @@
 				<p class="mb-2 h-32 text-[32pt] font-bold tracking-tight text-primary-foreground">
 					{block1_item.title}
 				</p>
-				<p class="mb-3 leading-tight text-primary-foreground">
+				<p class="mb-3 leading-tight text-lg text-primary-foreground">
 					{block1_item.description}
 				</p>
 				<button

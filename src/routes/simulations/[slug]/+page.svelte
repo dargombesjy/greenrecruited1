@@ -37,7 +37,7 @@
 	}
 </script>
 
-<div class="mx-auto flex h-screen w-3/4 flex-col p-8">
+<div class="mx-auto flex w-3/4 flex-col p-8 mb-8">
 	{#if data.data[0].image}
 		<img
 			src="{PUBLIC_STRAPI_URL}{data.data[0].image.url}"
@@ -53,7 +53,7 @@
 
 	<div class="self-center text-lg">
 		{#each data.data[0].choices as path}
-			<div class="flex gap-2 mb-2">
+			<div class="flex gap-1">
 				<input
 					onclick={() => updateChoice(path.next_node, data.data[0].name)}
 					id={slugify(path.choice_name)}
@@ -61,7 +61,7 @@
 					name="choices"
 					class="peer"
 				/>
-				<label for={slugify(path.choice_name)} class="peer-checked:bg-red-200">
+				<label for={slugify(path.choice_name)} class="p-3 rounded-lg peer-checked:bg-muted/80">
 					{path.choice_text}
 				</label>
 			</div>
@@ -70,19 +70,19 @@
 
 	{#if choicepar.next_node}
 		<button
-			class="mt-4 w-48 cursor-pointer self-center rounded-[20px] bg-primary-50 py-4 text-center text-white"
+			class="mt-4 w-48 cursor-pointer self-center rounded-xl bg-primary py-4 text-center text-primary-foreground"
 			onclick={() => gotoChoice()}
 			>Submit
 		</button>
 	{:else if nextpar}
 		<button
-			class="mt-4 w-48 cursor-pointer self-center rounded-[20px] bg-primary-50 py-4 text-center text-white"
+			class="mt-4 w-48 cursor-pointer self-center rounded-xl bg-primary py-4 text-center text-primary-foreground"
 			onclick={() => gotoSimulation(nextpar)}
 			>Simulasi Berikutnya
 		</button>
 	{:else}
 		<button
-			class="mt-4 w-48 cursor-pointer self-center rounded-[20px] bg-primary-50 py-4 text-center text-white"
+			class="mt-4 w-48 cursor-pointer self-center rounded-xl bg-primary py-4 text-center text-primary-foreground"
 			onclick={() => gotoSimulation('reset')}
 			>Reset
 		</button>
